@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+
+body, h1, h3{
+margin: 0;
+text-align: center;
+font-family: 'Ranchers', cursive;
+letter-spacing: 5px;
+}
+h1 {
+
+  padding: 20px;
+}
+
+.main-grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 5vh 95vh repeat(4, 100vh) auto;
+  grid-template-areas:
+    "nav nav nav nav"
+    "profile profile title title"
+    "side1 choice choice side2"
+    "fan fan fact fact"
+    "time time time time"
+    "meet meet quote quote"
+    "footer footer footer footer";
+  grid-gap: 10px;
+}
+.nav-bar-container {
+  grid-area: nav;
+  background-color: #fba8a4;
+}
+.profile-container {
+  grid-area: profile;
+  background-color: #f9484a;
+}
+.title-container {
+  grid-area: title;
+  background-color: #f2cf07;
+}
+.side1-container {
+  grid-area: side1;
+  background-color: #d5fefd;
+}
+.choice-container {
+  grid-area: choice;
+  background-color: #52a7c1;
+}
+.side2-container {
+  grid-area: side2;
+  background-color: #f5f186;
+}
+.fan-image-container {
+  grid-area: fan;
+  background-color: #0499f2;
+}
+.profile-facts-container {
+  grid-area: fact;
+  background-color: #aee1f9;
+}
+.timeline-container {
+  grid-area: time;
+  background-color: #efecec;
+}
+.fanmeet-img-container {
+  grid-area: meet;
+  background-color: #f8ef42;
+}
+.quotes-container {
+  grid-area: quote;
+  background-color: #08e1ae;
+}
+.footer {
+  grid-area: footer;
+  background-color: #2b1331;
+}
